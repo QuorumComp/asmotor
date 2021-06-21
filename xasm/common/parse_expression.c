@@ -223,9 +223,10 @@ expressionPriority8(size_t maxStringConstLength) {
     SLexerContext bm;
     lex_Bookmark(&bm);
 
+
     string* s = parse_StringExpression();
     if (s != NULL) {
-        if (parse_IsDot()) {
+        if (parse_AcceptDot()) {
             SExpression* expression = handleStringMemberFunctionReturningInt(s);
             if (expression != NULL)
                 return expression;

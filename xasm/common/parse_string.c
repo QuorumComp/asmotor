@@ -306,7 +306,7 @@ stringExpressionPri1(void) {
     string* t = stringExpressionPri2();
 
     SLexerContext bm;
-    for (lex_Bookmark(&bm); parse_IsDot(); lex_Bookmark(&bm)) {
+    for (lex_Bookmark(&bm); parse_AcceptDot(); lex_Bookmark(&bm)) {
         switch (lex_Context->token.id) {
             case T_STR_MEMBER_SLICE: {
                 parse_GetToken();

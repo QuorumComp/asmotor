@@ -109,7 +109,7 @@ handleLineBreak() {
 /* Public functions */
 
 bool
-parse_IsDot(void) {
+parse_AcceptDot(void) {
     if (lex_Context->token.id == '.') {
         parse_GetToken();
         return true;

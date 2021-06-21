@@ -38,7 +38,7 @@ extern bool
 parse_ExpectChar(char ch);
 
 extern bool
-parse_IsDot(void);
+parse_AcceptDot(void);
 
 INLINE bool
 parse_ExpectComma(void) {
